@@ -1,1 +1,42 @@
-/* your code */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.scoreboard {
+  width: 80%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 20 4px 8px rgba(0, 0, 0, 1);
+}
+
+.scoreboard thead {
+  background-color: #1f5a8e;
+  color: white;
+  text-align: left;
+}
+
+.scoreboard th,
+.scoreboard td {
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.scoreboard tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.scoreboard tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.scoreboard th:first-child,
+.scoreboard td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
